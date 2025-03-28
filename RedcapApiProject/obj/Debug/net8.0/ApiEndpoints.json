@@ -1,0 +1,49 @@
+[
+  {
+    "ContainingType": "RedcapController",
+    "Method": "GetRecordData",
+    "RelativePath": "api/redcap/get-record-data",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RedcapController",
+    "Method": "GetRecordDataById",
+    "RelativePath": "api/redcap/get-record-data-by-id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recordId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RedcapController",
+    "Method": "GetSurveyLink",
+    "RelativePath": "api/redcap/get-survey-link",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instrument",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

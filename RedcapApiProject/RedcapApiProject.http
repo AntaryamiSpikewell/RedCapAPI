@@ -1,0 +1,6 @@
+@RedcapApiProject_HostAddress = http://localhost:5128
+
+GET {{RedcapApiProject_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

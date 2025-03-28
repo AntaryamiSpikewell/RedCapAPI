@@ -1,0 +1,72 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "RedcapApiProject",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/redcap/get-survey-link": {
+      "get": {
+        "tags": [
+          "Redcap"
+        ],
+        "parameters": [
+          {
+            "name": "instrument",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/redcap/get-record-data": {
+      "get": {
+        "tags": [
+          "Redcap"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/redcap/get-record-data-by-id": {
+      "get": {
+        "tags": [
+          "Redcap"
+        ],
+        "parameters": [
+          {
+            "name": "recordId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}
